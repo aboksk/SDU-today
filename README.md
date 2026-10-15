@@ -30,9 +30,15 @@ npm run api:dev
 npm run web:dev
 ```
 
-Откройте frontend по адресу `http://localhost:5174`; Swagger UI API — `http://localhost:3000/api/docs`.
+Откройте frontend по адресу `http://localhost:5174`; Swagger UI API — `http://localhost:3000/docs`.
 Vite использует порт 5174 намеренно и завершит запуск, если он занят. Frontend направляет `/api/*` в NestJS через локальный proxy.
 PostgreSQL работает в Docker на порту `5433` хоста (внутри контейнера — `5432`).
+
+## Развёртывание на Vercel
+
+Корневой `vercel.json` описывает два сервиса одного проекта: `web` обслуживает frontend на всех путях, кроме `/api/*`, а `api` принимает запросы с префиксом `/api/`. Backend удаляет этот префикс перед маршрутизацией NestJS; локальные API-маршруты без префикса остаются доступны. Frontend обращается к API по тому же домену, поэтому отдельный service binding для межсервисного серверного вызова не требуется.
+
+Для production задайте `DATABASE_URL` как переменную окружения Vercel и подключите доступный из Vercel PostgreSQL: локальный PostgreSQL из Docker Compose не разворачивается вместе с Vercel-проектом. `WEB_ORIGIN` должен совпадать с production-доменом frontend, если CORS понадобится для запросов с другого origin. Не публикуйте содержимое `.env`.
 
 ## Регистрация и вход
 
@@ -44,18 +50,18 @@ PostgreSQL работает в Docker на порту `5433` хоста (вну�
 
 Проверить API вручную можно в Swagger UI или напрямую:
 
-- `GET http://localhost:3000/health`
-- `POST http://localhost:3000/auth/register`
-- `POST http://localhost:3000/auth/login`
-- `GET http://localhost:3000/auth/me`
-- `POST http://localhost:3000/auth/logout`
-- `GET http://localhost:3000/news`, `/events`, `/locations`
-- `GET http://localhost:3000/events/registrations/me` — мои записи (нужна сессия).
-- `POST http://localhost:3000/events/:id/register` — запись на мероприятие (нужна сессия).
-- `POST http://localhost:3000/events/:id/pay` — тестовая оплата платного мероприятия и запись на него (нужна сессия; деньги не списываются).
-- `GET http://localhost:3000/events/:id/attendees` — имена участников (нужна сессия и собственная запись на событие).
-- `GET http://localhost:3000/clubs/mine` — клубы текущего пользователя с его ролью.
-- `POST http://localhost:3000/clubs/:clubId/events` — создать событие (нужна роль `ADMIN` в этом клубе).
+- `GET http://localhost:3000/health` (на Vercel: `/api/health`)
+- `POST http://localhost:3000/auth/register` (на Vercel: `/api/auth/register`)
+- `POST http://localhost:3000/auth/login` (на Vercel: `/api/auth/login`)
+- `GET http://localhost:3000/auth/me` (на Vercel: `/api/auth/me`)
+- `POST http://localhost:3000/auth/logout` (на Vercel: `/api/auth/logout`)
+- `GET http://localhost:3000/news`, `/events`, `/locations` (на Vercel: `/api/news`, `/api/events`, `/api/locations`)
+- `GET http://localhost:3000/events/registrations/me` — мои записи (нужна сессия; на Vercel маршрут под `/api`).
+- `POST http://localhost:3000/events/:id/register` — запись на мероприятие (нужна сессия; на Vercel маршрут под `/api`).
+- `POST http://localhost:3000/events/:id/pay` — тестовая оплата платного мероприятия и запись на него (нужна сессия; деньги не списываются; на Vercel маршрут под `/api`).
+- `GET http://localhost:3000/events/:id/attendees` — имена участников (нужна сессия и собственная запись на событие; на Vercel маршрут под `/api`).
+- `GET http://localhost:3000/clubs/mine` — клубы текущего пользователя с его ролью (на Vercel маршрут под `/api`).
+- `POST http://localhost:3000/clubs/:clubId/events` — создать событие (нужна роль `ADMIN` в этом клубе; на Vercel маршрут под `/api`).
 
 Frontend отправляет запросы через `/api` proxy с `credentials: 'include'`. Для ручного входа напрямую в Swagger браузер должен сохранять cookie.
 
