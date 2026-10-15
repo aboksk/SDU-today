@@ -1,0 +1,134 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                 String              @id @default(cuid())
+  email              String              @unique
+  displayName        String
+  passwordHash       String?
+  createdAt          DateTime            @default(now())
+  memberships        ClubMembership[]
+  sessions           AuthSession[]
+  eventRegistrations EventRegistration[]
+}
+
+model AuthSession {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  userId    String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Club {
+  id          String           @id
+  name        Json
+  description Json?
+  memberships ClubMembership[]
+  events      Event[]
+}
+
+model ClubMembership {
+  userId   String
+  clubId   String
+  role     String   @default("MEMBER")
+  joinedAt DateTime @default(now())
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  club     Club     @relation(fields: [clubId], references: [id], onDelete: Cascade)
+
+  @@id([userId, clubId])
+  @@index([clubId])
+}
+
+model News {
+  id             String   @id
+  category       String
+  title          Json
+  lead           Json
+  body           Json
+  publishedAt    DateTime
+  relatedEventId String?
+  createdAt      DateTime @default(now())
+
+  @@index([publishedAt])
+}
+
+model Event {
+  id                  String              @id
+  category            String
+  clubId              String
+  startsAt            DateTime
+  title               Json
+  description         Json
+  price               Int                 @default(0)
+  capacity            Int
+  soldCount           Int                 @default(0)
+  locationId          String?
+  locationDescription Json?
+  createdAt           DateTime            @default(now())
+  club                Club                @relation(fields: [clubId], references: [id], onDelete: Restrict)
+  location            Location?           @relation(fields: [locationId], references: [id], onDelete: SetNull)
+  registrations       EventRegistration[]
+
+  @@index([startsAt])
+  @@index([clubId])
+}
+
+enum EventPaymentStatus {
+  NOT_REQUIRED
+  SIMULATED_PAID
+}
+
+model EventRegistration {
+  id            String             @id @default(cuid())
+  userId        String
+  eventId       String
+  paymentStatus EventPaymentStatus @default(NOT_REQUIRED)
+  createdAt     DateTime           @default(now())
+  user          User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  event         Event              @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, eventId])
+  @@index([eventId])
+}
+
+model FloorPlan {
+  id        String     @id
+  block     String
+  floor     Int
+  imagePath String     @default("assets/map.webp")
+  mapWidth  Int        @default(1382)
+  mapHeight Int        @default(2576)
+  locations Location[]
+
+  @@unique([block, floor])
+}
+
+model Location {
+  id          String     @id
+  kind        String
+  category    String
+  name        Json
+  keywords    String     @default("")
+  x           Int
+  y           Int
+  block       String
+  floor       Int?
+  row         String?
+  floorPlanId String?
+  floorPlan   FloorPlan? @relation(fields: [floorPlanId], references: [id], onDelete: SetNull)
+  events      Event[]
+
+  @@index([category])
+  @@index([floorPlanId])
+}

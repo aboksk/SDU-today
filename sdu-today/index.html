@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>SDU Today</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="SDU Today: новости, мероприятия, билеты и карта кампуса SDU University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hdr"><div class="wrap hdr-in">
+  <a class="brand" href="#/" aria-label="SDU Today"><img class="logo" src="assets/emblem.png" alt="" width="31" height="38"><span>SDU Today</span></a>
+  <nav class="nav" id="nav" aria-label="Main"></nav>
+  <div class="hdr-r"><div class="seg" role="group" aria-label="Language" id="langseg"><button data-lang="ru" aria-pressed="true">RU</button><button data-lang="en" aria-pressed="false">EN</button></div></div>
+</div></header>
+<main id="app" tabindex="-1"></main>
+<footer><div class="wrap"><p id="foot-note"></p><p><a href="#/organizer" id="foot-org"></a></p></div></footer>
+<nav class="tabbar" id="tabbar" aria-label="Main"></nav>
+<div id="modal-root"></div>
+<div id="toast-root" aria-live="polite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

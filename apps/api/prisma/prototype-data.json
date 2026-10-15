@@ -1,0 +1,2586 @@
+{
+  "source": "legacy-prototype/app.js",
+  "clubs": [
+    {
+      "id": "music",
+      "name": {
+        "ru": "Музыкальный клуб",
+        "en": "Music Club"
+      }
+    },
+    {
+      "id": "debate",
+      "name": {
+        "ru": "Клуб дебатов",
+        "en": "Debate Club"
+      }
+    },
+    {
+      "id": "sport",
+      "name": {
+        "ru": "Спортивный клуб",
+        "en": "Sports Club"
+      }
+    },
+    {
+      "id": "tech",
+      "name": {
+        "ru": "Клуб технологий",
+        "en": "Tech Club"
+      }
+    },
+    {
+      "id": "cinema",
+      "name": {
+        "ru": "Киноклуб",
+        "en": "Cinema Club"
+      }
+    },
+    {
+      "id": "business",
+      "name": {
+        "ru": "Бизнес-клуб",
+        "en": "Business Club"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "open-mic",
+      "category": "social",
+      "clubId": "music",
+      "daysFromToday": 0,
+      "time": "17:00",
+      "title": {
+        "ru": "Открытый микрофон",
+        "en": "Open mic"
+      },
+      "description": {
+        "ru": "Выходите на сцену со своей песней или стихами, либо просто послушайте. Музыкальный клуб соберёт небольшую сцену прямо в зоне столиков.",
+        "en": "Step up with a song or a poem, or just listen. The Music Club sets up a small stage right in the seating area."
+      },
+      "price": 0,
+      "capacity": 80,
+      "soldCount": 41,
+      "locationId": "seating",
+      "locationDescription": null
+    },
+    {
+      "id": "debate",
+      "category": "talk",
+      "clubId": "debate",
+      "daysFromToday": 2,
+      "time": "16:00",
+      "title": {
+        "ru": "Открытые дебаты: ИИ в образовании",
+        "en": "Open debate: AI in education"
+      },
+      "description": {
+        "ru": "Две команды поспорят, помогает ли искусственный интеллект учиться или мешает. После раунда зал задаёт вопросы спикерам.",
+        "en": "Two teams argue whether artificial intelligence helps or hurts learning. After the round, the audience questions the speakers."
+      },
+      "price": 0,
+      "capacity": 120,
+      "soldCount": 67,
+      "locationId": "lecture2",
+      "locationDescription": null
+    },
+    {
+      "id": "tt-tournament",
+      "category": "sport",
+      "clubId": "sport",
+      "daysFromToday": 3,
+      "time": "15:00",
+      "title": {
+        "ru": "Турнир по настольному теннису",
+        "en": "Table tennis tournament"
+      },
+      "description": {
+        "ru": "Олимпийская система: проигрыш — выбывание. Взнос покрывает судей и призы. Ракетки и мячи выдаёт клуб.",
+        "en": "Knockout format: lose and you are out. The fee covers referees and prizes. Rackets and balls are provided by the club."
+      },
+      "price": 500,
+      "capacity": 32,
+      "soldCount": 29,
+      "locationId": "rec",
+      "locationDescription": null
+    },
+    {
+      "id": "cinema",
+      "category": "social",
+      "clubId": "cinema",
+      "daysFromToday": 4,
+      "time": "19:00",
+      "title": {
+        "ru": "Киновечер: выбор зрителей",
+        "en": "Movie night: audience pick"
+      },
+      "description": {
+        "ru": "Фильм выбирают голосованием в чате клуба за день до показа. После сеанса короткое обсуждение.",
+        "en": "The film is chosen by a vote in the club chat the day before. A short discussion follows the screening."
+      },
+      "price": 300,
+      "capacity": 150,
+      "soldCount": 88,
+      "locationId": "lecture3",
+      "locationDescription": null
+    },
+    {
+      "id": "career-talk",
+      "category": "talk",
+      "clubId": "business",
+      "daysFromToday": 5,
+      "time": "14:00",
+      "title": {
+        "ru": "Выпускники о карьере в IT и финтехе",
+        "en": "Alumni on careers in IT and fintech"
+      },
+      "description": {
+        "ru": "Выпускники расскажут, как начинали, что ценят работодатели и какие навыки стоит прокачивать уже сейчас. Регистрация обязательна.",
+        "en": "Alumni share how they started, what employers value and which skills to build now. Registration is required."
+      },
+      "price": 0,
+      "capacity": 150,
+      "soldCount": 103,
+      "locationId": "lecture4",
+      "locationDescription": null
+    },
+    {
+      "id": "autumn-concert",
+      "category": "concert",
+      "clubId": "music",
+      "daysFromToday": 6,
+      "time": "18:30",
+      "title": {
+        "ru": "Осенний концерт клубов",
+        "en": "Autumn clubs concert"
+      },
+      "description": {
+        "ru": "Большой вечер на одной сцене: вокал, группы, танцы и сюрпризы от студенческих клубов. Двери открываются за 30 минут до начала.",
+        "en": "A big evening on one stage: vocals, bands, dance and surprises from student clubs. Doors open 30 minutes before the start."
+      },
+      "price": 1500,
+      "capacity": 300,
+      "soldCount": 212,
+      "locationId": "hall-a",
+      "locationDescription": null
+    },
+    {
+      "id": "quiz",
+      "category": "social",
+      "clubId": "debate",
+      "daysFromToday": 8,
+      "time": "18:00",
+      "title": {
+        "ru": "Интеллектуальная игра",
+        "en": "Quiz night"
+      },
+      "description": {
+        "ru": "Команды по четыре человека отвечают на вопросы из науки, кино, истории и интернета. Лучшая команда получает призы.",
+        "en": "Teams of four answer questions on science, film, history and the internet. The best team wins prizes."
+      },
+      "price": 400,
+      "capacity": 120,
+      "soldCount": 54,
+      "locationId": "seating",
+      "locationDescription": null
+    },
+    {
+      "id": "hackathon",
+      "category": "tech",
+      "clubId": "tech",
+      "daysFromToday": 9,
+      "time": "10:00",
+      "title": {
+        "ru": "Хакатон на один день",
+        "en": "One-day hackathon"
+      },
+      "description": {
+        "ru": "Соберите команду, придумайте продукт и покажите прототип жюри к вечеру. Регистрация уже закрыта: все места заняты.",
+        "en": "Form a team, come up with a product and show a prototype to the jury by evening. Registration is closed: all spots are taken."
+      },
+      "price": 0,
+      "capacity": 60,
+      "soldCount": 60,
+      "locationId": "lecture1",
+      "locationDescription": null
+    },
+    {
+      "id": "basketball",
+      "category": "sport",
+      "clubId": "sport",
+      "daysFromToday": 12,
+      "time": "17:00",
+      "title": {
+        "ru": "Межфакультетский баскетбольный турнир",
+        "en": "Inter-faculty basketball tournament"
+      },
+      "description": {
+        "ru": "Четыре команды от факультетов сыграют за кубок университета. Болельщики приходят с флагами и барабанами.",
+        "en": "Four faculty teams play for the university cup. Fans come with flags and drums."
+      },
+      "price": 700,
+      "capacity": 400,
+      "soldCount": 230,
+      "locationId": null,
+      "locationDescription": {
+        "ru": "Спортивный комплекс (вне схемы)",
+        "en": "Sports complex (off the plan)"
+      }
+    }
+  ],
+  "news": [
+    {
+      "id": "new-app",
+      "category": "announce",
+      "daysFromToday": 0,
+      "title": {
+        "ru": "Встречайте SDU Today: новости, события и карта в одном приложении",
+        "en": "Meet SDU Today: news, events and the map in one app"
+      },
+      "lead": {
+        "ru": "Мы собрали всё, что нужно студенту, чтобы не искать по чатам и объявлениям.",
+        "en": "Everything a student needs, so you stop digging through chats and notice boards."
+      },
+      "body": {
+        "ru": [
+          "В SDU Today можно читать новости университета, находить мероприятия и покупать билеты, а также искать аудитории и сервисы на карте кампуса.",
+          "Приложение пока работает в тестовом режиме. Расскажите, чего вам в нём не хватает, и мы добавим."
+        ],
+        "en": [
+          "In SDU Today you can read university news, find events and buy tickets, and look up rooms and services on the campus map.",
+          "The app is in test mode for now. Tell us what is missing and we will add it."
+        ]
+      },
+      "relatedEventId": null
+    },
+    {
+      "id": "exchange",
+      "category": "academics",
+      "daysFromToday": -1,
+      "title": {
+        "ru": "Открыт приём заявок на программы обмена на весенний семестр",
+        "en": "Applications open for spring semester exchange programs"
+      },
+      "lead": {
+        "ru": "Подать документы можно до конца месяца через офис международных связей.",
+        "en": "Documents can be submitted until the end of the month through the international relations office."
+      },
+      "body": {
+        "ru": [
+          "Студенты 2–4 курсов могут подать заявки на семестровый обмен в университеты-партнёры. Понадобятся выписка с оценками, подтверждение уровня английского и мотивационное письмо.",
+          "Консультации проходят по будням. Перед визитом проверьте список документов на сайте университета."
+        ],
+        "en": [
+          "Students in years 2–4 can apply for a semester exchange at partner universities. You will need a transcript, proof of English proficiency and a motivation letter.",
+          "Consultations run on weekdays. Check the document list on the university website before you visit."
+        ]
+      },
+      "relatedEventId": null
+    },
+    {
+      "id": "library-hours",
+      "category": "campus",
+      "daysFromToday": -2,
+      "title": {
+        "ru": "Библиотека продлевает часы работы в период сессии",
+        "en": "Library extends opening hours during exams"
+      },
+      "lead": {
+        "ru": "Читальные залы будут открыты допоздна, а часть мест отдадут под групповую подготовку.",
+        "en": "Reading rooms stay open late, and some seats are set aside for group study."
+      },
+      "body": {
+        "ru": [
+          "В период сессии библиотека работает дольше обычного. Часть читальных мест отведена под тихую работу, часть под командную подготовку к экзаменам.",
+          "Актуальное расписание будет доступно на странице библиотеки на карте кампуса."
+        ],
+        "en": [
+          "During exam weeks the library is open longer than usual. Some reading seats are reserved for quiet work, others for group exam prep.",
+          "The current schedule will be available on the library page of the campus map."
+        ]
+      },
+      "relatedEventId": null
+    },
+    {
+      "id": "club-fair",
+      "category": "campus",
+      "daysFromToday": -3,
+      "title": {
+        "ru": "Ярмарка клубов: найдите сообщество по интересам",
+        "en": "Clubs fair: find a community that fits"
+      },
+      "lead": {
+        "ru": "Студенческие клубы расскажут о себе и откроют набор новых участников.",
+        "en": "Student clubs will present themselves and open recruitment."
+      },
+      "body": {
+        "ru": [
+          "На ярмарке можно познакомиться с командами, задать вопросы и сразу записаться. Музыка, дебаты, технологии, спорт и кино: выбирайте то, что ближе.",
+          "Следите за событиями клубов в разделе «Мероприятия». Билеты можно купить прямо в приложении."
+        ],
+        "en": [
+          "At the fair you can meet the teams, ask questions and sign up on the spot. Music, debate, tech, sports and film: pick what suits you.",
+          "Follow club events in the Events section. You can buy tickets right in the app."
+        ]
+      },
+      "relatedEventId": null
+    },
+    {
+      "id": "schedule",
+      "category": "announce",
+      "daysFromToday": -4,
+      "title": {
+        "ru": "Изменения в расписании на ближайшую неделю",
+        "en": "Schedule changes for the coming week"
+      },
+      "lead": {
+        "ru": "Часть занятий переносится из-за технических работ в корпусе.",
+        "en": "Some classes are moving because of maintenance work in the building."
+      },
+      "body": {
+        "ru": [
+          "Некоторые занятия в блоках F и G перенесены в другие аудитории. Актуальные номера публикуются в расписании.",
+          "Если не можете найти новую аудиторию, введите её номер в поиске на карте: приложение покажет, как пройти."
+        ],
+        "en": [
+          "Some classes in Blocks F and G have moved to other rooms. Current room numbers are published in the timetable.",
+          "If you cannot find the new room, type its number into the map search and the app will show you the way."
+        ]
+      },
+      "relatedEventId": null
+    },
+    {
+      "id": "career-news",
+      "category": "academics",
+      "daysFromToday": -5,
+      "title": {
+        "ru": "Выпускники расскажут о карьере в IT и финтехе",
+        "en": "Alumni to talk about careers in IT and fintech"
+      },
+      "lead": {
+        "ru": "Открытая встреча с практиками пройдёт на этой неделе в лекционном зале.",
+        "en": "An open meetup with practitioners takes place this week in a lecture hall."
+      },
+      "body": {
+        "ru": [
+          "Выпускники и приглашённые специалисты поделятся тем, как начать карьеру, на что обращают внимание работодатели и какие навыки развивать уже сейчас.",
+          "Регистрация бесплатная, места ограничены."
+        ],
+        "en": [
+          "Alumni and guest speakers will share how to start a career, what employers look for and which skills to build now.",
+          "Registration is free, spots are limited."
+        ]
+      },
+      "relatedEventId": "career-talk"
+    },
+    {
+      "id": "olympiad",
+      "category": "achieve",
+      "daysFromToday": -6,
+      "title": {
+        "ru": "Студенческая команда вышла в финал олимпиады по программированию",
+        "en": "Student team reaches the programming olympiad final"
+      },
+      "lead": {
+        "ru": "Ребята прошли отборочный этап и готовятся к финальным заданиям.",
+        "en": "The team passed the qualifying round and is preparing for the final tasks."
+      },
+      "body": {
+        "ru": [
+          "Команда факультета инженерии и естественных наук прошла отборочный раунд. Финал состоится в конце месяца.",
+          "Клуб технологий проводит открытые тренировки для всех желающих: следите за анонсами."
+        ],
+        "en": [
+          "A team from the Faculty of Engineering and Natural Sciences passed the qualifying round. The final takes place at the end of the month.",
+          "The Tech Club runs open training sessions for anyone interested: watch for announcements."
+        ]
+      },
+      "relatedEventId": "hackathon"
+    },
+    {
+      "id": "scholarship",
+      "category": "announce",
+      "daysFromToday": -7,
+      "title": {
+        "ru": "Напоминание о сроках подачи документов на стипендию",
+        "en": "Reminder: scholarship application deadline"
+      },
+      "lead": {
+        "ru": "Приём документов на академическую стипендию закончится в конце месяца.",
+        "en": "Applications for the academic scholarship close at the end of the month."
+      },
+      "body": {
+        "ru": [
+          "Проверьте, что в личном кабинете актуальны оценки и контактные данные. Неполные заявки рассматриваться не будут.",
+          "С вопросами обращайтесь в службу поддержки студентов: её можно найти на карте."
+        ],
+        "en": [
+          "Check that your grades and contact details are up to date in your account. Incomplete applications will not be considered.",
+          "For questions, go to Student support: you can find it on the map."
+        ]
+      },
+      "relatedEventId": null
+    }
+  ],
+  "locations": [
+    {
+      "id": "entrance-c",
+      "kind": "place",
+      "cat": "entrance",
+      "x": 1078,
+      "y": 2150,
+      "block": "C",
+      "ru": "Вход (блок C)",
+      "en": "Entrance (Block C)",
+      "kw": "вход выход entrance"
+    },
+    {
+      "id": "entrance-g",
+      "kind": "place",
+      "cat": "entrance",
+      "x": 1128,
+      "y": 655,
+      "block": "G",
+      "ru": "Вход (блок G)",
+      "en": "Entrance (Block G)",
+      "kw": "вход entrance"
+    },
+    {
+      "id": "info",
+      "kind": "place",
+      "cat": "service",
+      "x": 980,
+      "y": 2175,
+      "block": "C",
+      "ru": "Информационная стойка",
+      "en": "Information desk",
+      "kw": "информация справка info"
+    },
+    {
+      "id": "wifi",
+      "kind": "place",
+      "cat": "service",
+      "x": 882,
+      "y": 2135,
+      "block": "C",
+      "ru": "Зона Wi-Fi",
+      "en": "Wi-Fi zone",
+      "kw": "вайфай интернет wifi"
+    },
+    {
+      "id": "cloakroom",
+      "kind": "place",
+      "cat": "service",
+      "x": 1055,
+      "y": 2045,
+      "block": "C",
+      "ru": "Гардероб",
+      "en": "Cloakroom",
+      "kw": "гардероб куртка cloakroom coat"
+    },
+    {
+      "id": "library",
+      "kind": "place",
+      "cat": "service",
+      "x": 680,
+      "y": 2340,
+      "block": "B",
+      "ru": "Библиотека",
+      "en": "Library",
+      "kw": "книги читальный зал library books"
+    },
+    {
+      "id": "admin",
+      "kind": "place",
+      "cat": "service",
+      "x": 590,
+      "y": 2092,
+      "block": "B",
+      "ru": "Административные офисы",
+      "en": "Administration offices",
+      "kw": "администрация офис admin"
+    },
+    {
+      "id": "medical",
+      "kind": "place",
+      "cat": "service",
+      "x": 745,
+      "y": 487,
+      "block": "G",
+      "ru": "Медпункт",
+      "en": "Medical center",
+      "kw": "врач медицинский медцентр health doctor"
+    },
+    {
+      "id": "support",
+      "kind": "place",
+      "cat": "service",
+      "x": 752,
+      "y": 1585,
+      "block": "D",
+      "ru": "Служба поддержки студентов",
+      "en": "Student support",
+      "kw": "поддержка help support"
+    },
+    {
+      "id": "market",
+      "kind": "place",
+      "cat": "service",
+      "x": 950,
+      "y": 803,
+      "block": "F",
+      "ru": "Market",
+      "en": "Market",
+      "kw": "маркет магазин market shop"
+    },
+    {
+      "id": "copy-center",
+      "kind": "place",
+      "cat": "service",
+      "x": 950,
+      "y": 551,
+      "block": "G",
+      "ru": "Копировальный центр",
+      "en": "Copy center",
+      "kw": "копировальный центр копия печать print copy"
+    },
+    {
+      "id": "canteen",
+      "kind": "place",
+      "cat": "food",
+      "x": 975,
+      "y": 990,
+      "block": "F",
+      "ru": "Столовая",
+      "en": "Canteen",
+      "kw": "еда обед столовая food lunch"
+    },
+    {
+      "id": "cafe",
+      "kind": "place",
+      "cat": "food",
+      "x": 1100,
+      "y": 1165,
+      "block": "F",
+      "ru": "Кофейня",
+      "en": "Coffee point",
+      "kw": "кофе coffee cafe"
+    },
+    {
+      "id": "seating",
+      "kind": "place",
+      "cat": "food",
+      "x": 925,
+      "y": 1262,
+      "block": "E",
+      "ru": "Зона столиков",
+      "en": "Seating area",
+      "kw": "столики отдых seating"
+    },
+    {
+      "id": "lecture1",
+      "kind": "place",
+      "cat": "hall",
+      "x": 890,
+      "y": 1362,
+      "block": "E",
+      "ru": "Бочка D",
+      "en": "Bochka D",
+      "kw": "бочка bochka barrel лекция lecture аудитория"
+    },
+    {
+      "id": "lecture2",
+      "kind": "place",
+      "cat": "hall",
+      "x": 952,
+      "y": 1560,
+      "block": "E",
+      "ru": "Бочка C",
+      "en": "Bochka C",
+      "kw": "бочка bochka barrel лекция lecture аудитория"
+    },
+    {
+      "id": "lecture3",
+      "kind": "place",
+      "cat": "hall",
+      "x": 890,
+      "y": 1700,
+      "block": "D",
+      "ru": "Бочка B",
+      "en": "Bochka B",
+      "kw": "бочка bochka barrel лекция lecture аудитория"
+    },
+    {
+      "id": "lecture4",
+      "kind": "place",
+      "cat": "hall",
+      "x": 952,
+      "y": 1828,
+      "block": "D",
+      "ru": "Бочка A",
+      "en": "Bochka A",
+      "kw": "бочка bochka barrel лекция lecture аудитория"
+    },
+    {
+      "id": "hall-a",
+      "kind": "place",
+      "cat": "hall",
+      "x": 325,
+      "y": 2185,
+      "block": "A",
+      "ru": "Red hall",
+      "en": "Red hall",
+      "kw": "зал концерт сцена red hall"
+    },
+    {
+      "id": "rec",
+      "kind": "place",
+      "cat": "hall",
+      "x": 1000,
+      "y": 738,
+      "block": "G",
+      "ru": "Зона отдыха и игр (настольный теннис)",
+      "en": "Recreation zone (table tennis)",
+      "kw": "теннис пинг-понг игры tennis games"
+    },
+    {
+      "id": "hall-blue",
+      "kind": "place",
+      "cat": "hall",
+      "x": 1000,
+      "y": 685,
+      "block": "G",
+      "ru": "Blue hall",
+      "en": "Blue hall",
+      "kw": "синий зал blue hall"
+    },
+    {
+      "id": "wc-g",
+      "kind": "place",
+      "cat": "wc",
+      "x": 678,
+      "y": 787,
+      "block": "G",
+      "ru": "Уборная",
+      "en": "Restroom",
+      "kw": "уборная туалет wc restroom toilet"
+    },
+    {
+      "id": "wc-f",
+      "kind": "place",
+      "cat": "wc",
+      "x": 678,
+      "y": 1153,
+      "block": "F",
+      "ru": "Уборная",
+      "en": "Restroom",
+      "kw": "уборная туалет wc restroom toilet"
+    },
+    {
+      "id": "wc-e",
+      "kind": "place",
+      "cat": "wc",
+      "x": 678,
+      "y": 1515,
+      "block": "E",
+      "ru": "Уборная",
+      "en": "Restroom",
+      "kw": "уборная туалет wc restroom toilet"
+    },
+    {
+      "id": "wc-d",
+      "kind": "place",
+      "cat": "wc",
+      "x": 678,
+      "y": 1880,
+      "block": "D",
+      "ru": "Уборная",
+      "en": "Restroom",
+      "kw": "уборная туалет wc restroom toilet"
+    },
+    {
+      "id": "wc-b",
+      "kind": "place",
+      "cat": "wc",
+      "x": 477,
+      "y": 2002,
+      "block": "B",
+      "ru": "Уборная",
+      "en": "Restroom",
+      "kw": "уборная туалет wc restroom toilet"
+    },
+    {
+      "id": "D-108",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 1688,
+      "block": "D",
+      "floor": 1,
+      "row": "top",
+      "ru": "Деканат (D-108)",
+      "en": "Dean's office (D-108)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-208",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 1688,
+      "block": "D",
+      "floor": 2,
+      "row": "top",
+      "ru": "Деканат (D-208)",
+      "en": "Dean's office (D-208)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-308",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 1688,
+      "block": "D",
+      "floor": 3,
+      "row": "top",
+      "ru": "Деканат (D-308)",
+      "en": "Dean's office (D-308)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-107",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 1688,
+      "block": "D",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория D-107",
+      "en": "Room D-107",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-207",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 1688,
+      "block": "D",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория D-207",
+      "en": "Room D-207",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-307",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 1688,
+      "block": "D",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория D-307",
+      "en": "Room D-307",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-106",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 1688,
+      "block": "D",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория D-106",
+      "en": "Room D-106",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-206",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 1688,
+      "block": "D",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория D-206",
+      "en": "Room D-206",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-306",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 1688,
+      "block": "D",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория D-306",
+      "en": "Room D-306",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-105",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 1806,
+      "block": "D",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория D-105",
+      "en": "Room D-105",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-205",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 1806,
+      "block": "D",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория D-205",
+      "en": "Room D-205",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-305",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 1806,
+      "block": "D",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория D-305",
+      "en": "Room D-305",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-104",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 1806,
+      "block": "D",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория D-104",
+      "en": "Room D-104",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-204",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 1806,
+      "block": "D",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория D-204",
+      "en": "Room D-204",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-304",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 1806,
+      "block": "D",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория D-304",
+      "en": "Room D-304",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-103",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 1806,
+      "block": "D",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория D-103",
+      "en": "Room D-103",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-203",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 1806,
+      "block": "D",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория D-203",
+      "en": "Room D-203",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-303",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 1806,
+      "block": "D",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория D-303",
+      "en": "Room D-303",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-102",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 1806,
+      "block": "D",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория D-102",
+      "en": "Room D-102",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-202",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 1806,
+      "block": "D",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория D-202",
+      "en": "Room D-202",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-302",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 1806,
+      "block": "D",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория D-302",
+      "en": "Room D-302",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-101",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 1806,
+      "block": "D",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория D-101",
+      "en": "Room D-101",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-201",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 1806,
+      "block": "D",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория D-201",
+      "en": "Room D-201",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "D-301",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 1806,
+      "block": "D",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория D-301",
+      "en": "Room D-301",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-101",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 1322,
+      "block": "E",
+      "floor": 1,
+      "row": "top",
+      "ru": "Деканат (E-101)",
+      "en": "Dean's office (E-101)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-201",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 1322,
+      "block": "E",
+      "floor": 2,
+      "row": "top",
+      "ru": "Деканат (E-201)",
+      "en": "Dean's office (E-201)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-301",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 1322,
+      "block": "E",
+      "floor": 3,
+      "row": "top",
+      "ru": "Деканат (E-301)",
+      "en": "Dean's office (E-301)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-102",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 1322,
+      "block": "E",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория E-102",
+      "en": "Room E-102",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-202",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 1322,
+      "block": "E",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория E-202",
+      "en": "Room E-202",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-302",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 1322,
+      "block": "E",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория E-302",
+      "en": "Room E-302",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-103",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 1322,
+      "block": "E",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория E-103",
+      "en": "Room E-103",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-203",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 1322,
+      "block": "E",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория E-203",
+      "en": "Room E-203",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-303",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 1322,
+      "block": "E",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория E-303",
+      "en": "Room E-303",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-104",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 1322,
+      "block": "E",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория E-104",
+      "en": "Room E-104",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-204",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 1322,
+      "block": "E",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория E-204",
+      "en": "Room E-204",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-304",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 1322,
+      "block": "E",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория E-304",
+      "en": "Room E-304",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-105",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 1439,
+      "block": "E",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория E-105",
+      "en": "Room E-105",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-205",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 1439,
+      "block": "E",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория E-205",
+      "en": "Room E-205",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-305",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 1439,
+      "block": "E",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория E-305",
+      "en": "Room E-305",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-106",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 1439,
+      "block": "E",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория E-106",
+      "en": "Room E-106",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-206",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 1439,
+      "block": "E",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория E-206",
+      "en": "Room E-206",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-306",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 1439,
+      "block": "E",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория E-306",
+      "en": "Room E-306",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-107",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 1439,
+      "block": "E",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория E-107",
+      "en": "Room E-107",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-207",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 1439,
+      "block": "E",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория E-207",
+      "en": "Room E-207",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-307",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 1439,
+      "block": "E",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория E-307",
+      "en": "Room E-307",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-108",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 1439,
+      "block": "E",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория E-108",
+      "en": "Room E-108",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-208",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 1439,
+      "block": "E",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория E-208",
+      "en": "Room E-208",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-308",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 1439,
+      "block": "E",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория E-308",
+      "en": "Room E-308",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-109",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 1439,
+      "block": "E",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория E-109",
+      "en": "Room E-109",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-209",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 1439,
+      "block": "E",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория E-209",
+      "en": "Room E-209",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-309",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 1439,
+      "block": "E",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория E-309",
+      "en": "Room E-309",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-110",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 1439,
+      "block": "E",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория E-110",
+      "en": "Room E-110",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-210",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 1439,
+      "block": "E",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория E-210",
+      "en": "Room E-210",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "E-310",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 1439,
+      "block": "E",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория E-310",
+      "en": "Room E-310",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-101",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 955,
+      "block": "F",
+      "floor": 1,
+      "row": "top",
+      "ru": "Деканат (F-101)",
+      "en": "Dean's office (F-101)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-201",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 955,
+      "block": "F",
+      "floor": 2,
+      "row": "top",
+      "ru": "Деканат (F-201)",
+      "en": "Dean's office (F-201)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-301",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 955,
+      "block": "F",
+      "floor": 3,
+      "row": "top",
+      "ru": "Деканат (F-301)",
+      "en": "Dean's office (F-301)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-102",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 955,
+      "block": "F",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория F-102",
+      "en": "Room F-102",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-202",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 955,
+      "block": "F",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория F-202",
+      "en": "Room F-202",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-302",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 955,
+      "block": "F",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория F-302",
+      "en": "Room F-302",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-103",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 955,
+      "block": "F",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория F-103",
+      "en": "Room F-103",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-203",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 955,
+      "block": "F",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория F-203",
+      "en": "Room F-203",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-303",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 955,
+      "block": "F",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория F-303",
+      "en": "Room F-303",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-104",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 955,
+      "block": "F",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория F-104",
+      "en": "Room F-104",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-204",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 955,
+      "block": "F",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория F-204",
+      "en": "Room F-204",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-304",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 955,
+      "block": "F",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория F-304",
+      "en": "Room F-304",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-105",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 1072,
+      "block": "F",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория F-105",
+      "en": "Room F-105",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-205",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 1072,
+      "block": "F",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория F-205",
+      "en": "Room F-205",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-305",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 1072,
+      "block": "F",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория F-305",
+      "en": "Room F-305",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-106",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 1072,
+      "block": "F",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория F-106",
+      "en": "Room F-106",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-206",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 1072,
+      "block": "F",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория F-206",
+      "en": "Room F-206",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-306",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 1072,
+      "block": "F",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория F-306",
+      "en": "Room F-306",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-107",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 1072,
+      "block": "F",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория F-107",
+      "en": "Room F-107",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-207",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 1072,
+      "block": "F",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория F-207",
+      "en": "Room F-207",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-307",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 1072,
+      "block": "F",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория F-307",
+      "en": "Room F-307",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-108",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 1072,
+      "block": "F",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория F-108",
+      "en": "Room F-108",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-208",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 1072,
+      "block": "F",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория F-208",
+      "en": "Room F-208",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-308",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 1072,
+      "block": "F",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория F-308",
+      "en": "Room F-308",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-109",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 1072,
+      "block": "F",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория F-109",
+      "en": "Room F-109",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-209",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 1072,
+      "block": "F",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория F-209",
+      "en": "Room F-209",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-309",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 1072,
+      "block": "F",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория F-309",
+      "en": "Room F-309",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-110",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 1072,
+      "block": "F",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория F-110",
+      "en": "Room F-110",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-210",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 1072,
+      "block": "F",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория F-210",
+      "en": "Room F-210",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "F-310",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 1072,
+      "block": "F",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория F-310",
+      "en": "Room F-310",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-101",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 595,
+      "block": "G",
+      "floor": 1,
+      "row": "top",
+      "ru": "Офис бизнес-школы (G-101)",
+      "en": "Business School office (G-101)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-201",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 595,
+      "block": "G",
+      "floor": 2,
+      "row": "top",
+      "ru": "Офис бизнес-школы (G-201)",
+      "en": "Business School office (G-201)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-301",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 595,
+      "block": "G",
+      "floor": 3,
+      "row": "top",
+      "ru": "Офис бизнес-школы (G-301)",
+      "en": "Business School office (G-301)",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-102",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 595,
+      "block": "G",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория G-102",
+      "en": "Room G-102",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-202",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 595,
+      "block": "G",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория G-202",
+      "en": "Room G-202",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-302",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 595,
+      "block": "G",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория G-302",
+      "en": "Room G-302",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-103",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 595,
+      "block": "G",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория G-103",
+      "en": "Room G-103",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-203",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 595,
+      "block": "G",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория G-203",
+      "en": "Room G-203",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-303",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 595,
+      "block": "G",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория G-303",
+      "en": "Room G-303",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-104",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 595,
+      "block": "G",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория G-104",
+      "en": "Room G-104",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-204",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 595,
+      "block": "G",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория G-204",
+      "en": "Room G-204",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-304",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 595,
+      "block": "G",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория G-304",
+      "en": "Room G-304",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-105",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 706,
+      "block": "G",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория G-105",
+      "en": "Room G-105",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-205",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 706,
+      "block": "G",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория G-205",
+      "en": "Room G-205",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-305",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 706,
+      "block": "G",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория G-305",
+      "en": "Room G-305",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-106",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 706,
+      "block": "G",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория G-106",
+      "en": "Room G-106",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-206",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 706,
+      "block": "G",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория G-206",
+      "en": "Room G-206",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-306",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 706,
+      "block": "G",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория G-306",
+      "en": "Room G-306",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-107",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 706,
+      "block": "G",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория G-107",
+      "en": "Room G-107",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-207",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 706,
+      "block": "G",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория G-207",
+      "en": "Room G-207",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-307",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 706,
+      "block": "G",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория G-307",
+      "en": "Room G-307",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-108",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 706,
+      "block": "G",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория G-108",
+      "en": "Room G-108",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-208",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 706,
+      "block": "G",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория G-208",
+      "en": "Room G-208",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-308",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 706,
+      "block": "G",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория G-308",
+      "en": "Room G-308",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-109",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 706,
+      "block": "G",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория G-109",
+      "en": "Room G-109",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-209",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 706,
+      "block": "G",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория G-209",
+      "en": "Room G-209",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-309",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 706,
+      "block": "G",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория G-309",
+      "en": "Room G-309",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-110",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 706,
+      "block": "G",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория G-110",
+      "en": "Room G-110",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-210",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 706,
+      "block": "G",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория G-210",
+      "en": "Room G-210",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "G-310",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 706,
+      "block": "G",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория G-310",
+      "en": "Room G-310",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-101",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 225,
+      "block": "H",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория H-101",
+      "en": "Room H-101",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-201",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 225,
+      "block": "H",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория H-201",
+      "en": "Room H-201",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-301",
+      "kind": "room",
+      "cat": "room",
+      "x": 488,
+      "y": 225,
+      "block": "H",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория H-301",
+      "en": "Room H-301",
+      "kw": "деканат dean office офис кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-102",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 225,
+      "block": "H",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория H-102",
+      "en": "Room H-102",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-202",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 225,
+      "block": "H",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория H-202",
+      "en": "Room H-202",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-302",
+      "kind": "room",
+      "cat": "room",
+      "x": 562,
+      "y": 225,
+      "block": "H",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория H-302",
+      "en": "Room H-302",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-103",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 225,
+      "block": "H",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория H-103",
+      "en": "Room H-103",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-203",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 225,
+      "block": "H",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория H-203",
+      "en": "Room H-203",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-303",
+      "kind": "room",
+      "cat": "room",
+      "x": 663,
+      "y": 225,
+      "block": "H",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория H-303",
+      "en": "Room H-303",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-104",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 225,
+      "block": "H",
+      "floor": 1,
+      "row": "top",
+      "ru": "Аудитория H-104",
+      "en": "Room H-104",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-204",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 225,
+      "block": "H",
+      "floor": 2,
+      "row": "top",
+      "ru": "Аудитория H-204",
+      "en": "Room H-204",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-304",
+      "kind": "room",
+      "cat": "room",
+      "x": 744,
+      "y": 225,
+      "block": "H",
+      "floor": 3,
+      "row": "top",
+      "ru": "Аудитория H-304",
+      "en": "Room H-304",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-105",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 336,
+      "block": "H",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория H-105",
+      "en": "Room H-105",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-205",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 336,
+      "block": "H",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория H-205",
+      "en": "Room H-205",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-305",
+      "kind": "room",
+      "cat": "room",
+      "x": 492,
+      "y": 336,
+      "block": "H",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория H-305",
+      "en": "Room H-305",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-106",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 336,
+      "block": "H",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория H-106",
+      "en": "Room H-106",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-206",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 336,
+      "block": "H",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория H-206",
+      "en": "Room H-206",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-306",
+      "kind": "room",
+      "cat": "room",
+      "x": 544,
+      "y": 336,
+      "block": "H",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория H-306",
+      "en": "Room H-306",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-107",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 336,
+      "block": "H",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория H-107",
+      "en": "Room H-107",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-207",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 336,
+      "block": "H",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория H-207",
+      "en": "Room H-207",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-307",
+      "kind": "room",
+      "cat": "room",
+      "x": 592,
+      "y": 336,
+      "block": "H",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория H-307",
+      "en": "Room H-307",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-108",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 336,
+      "block": "H",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория H-108",
+      "en": "Room H-108",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-208",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 336,
+      "block": "H",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория H-208",
+      "en": "Room H-208",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-308",
+      "kind": "room",
+      "cat": "room",
+      "x": 642,
+      "y": 336,
+      "block": "H",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория H-308",
+      "en": "Room H-308",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-109",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 336,
+      "block": "H",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория H-109",
+      "en": "Room H-109",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-209",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 336,
+      "block": "H",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория H-209",
+      "en": "Room H-209",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-309",
+      "kind": "room",
+      "cat": "room",
+      "x": 693,
+      "y": 336,
+      "block": "H",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория H-309",
+      "en": "Room H-309",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-110",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 336,
+      "block": "H",
+      "floor": 1,
+      "row": "bottom",
+      "ru": "Аудитория H-110",
+      "en": "Room H-110",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-210",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 336,
+      "block": "H",
+      "floor": 2,
+      "row": "bottom",
+      "ru": "Аудитория H-210",
+      "en": "Room H-210",
+      "kw": "кабинет аудитория room classroom"
+    },
+    {
+      "id": "H-310",
+      "kind": "room",
+      "cat": "room",
+      "x": 745,
+      "y": 336,
+      "block": "H",
+      "floor": 3,
+      "row": "bottom",
+      "ru": "Аудитория H-310",
+      "en": "Room H-310",
+      "kw": "кабинет аудитория room classroom"
+    }
+  ]
+}

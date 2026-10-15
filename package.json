@@ -1,0 +1,21 @@
+{
+  "name": "sdu-today",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "db:up": "docker compose up -d postgres",
+    "db:down": "docker compose down",
+    "db:migrate": "npm run prisma:migrate --workspace @sdu-today/api",
+    "db:seed": "npm run seed --workspace @sdu-today/api",
+    "db:import": "npm run import:prototype --workspace @sdu-today/api",
+    "api:dev": "npm run start:dev --workspace @sdu-today/api",
+    "web:dev": "npm run dev --workspace @sdu-today/web",
+    "web:build": "npm run build --workspace @sdu-today/web",
+    "test": "npm run test --workspace @sdu-today/api",
+    "test:db": "npm run test:db --workspace @sdu-today/api"
+  }
+}
